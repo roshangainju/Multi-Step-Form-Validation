@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+  
+  <button class="btn" id="mode" onclick="mode()"> Dark Mode</button>
+   
+    <form id="regForm" class="light" action="">
+
+          
+        <h1>Registration Form</h1>
+        
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab"> 
+        <h3>Personal Information</h3>  
+        <p>Name</p>
+          <input placeholder="Full Name" type="text" name="name" >
+          <p>Date of Birth</p>
+          <input type="date" id="dob" name="dob" />
+
+            <p>Gender</p>
+            <fieldset>
+              <input type="radio" name="gender" value="male" class="check" />
+              <label>Male</label>       
+              <input type="radio" name="gender" class="check" value="female" />
+              <label>Female</label>       
+              <input type="radio" name="gender"  value="other" class="check" />
+              <label>Others</label>
+            </fieldset>
+
+
+            <p>Marital Status</p>
+            <fieldset>
+              <input type="radio" id="unmarried" name="status" value="unmarried" class="check" >
+              <label for="unmaried">Unmarried</label>
+              <input type="radio"  name="status" class="check" value="married"/>
+              <label for="maried">Married</label>
+            </fieldset>
+
+            <p>Language</p>
+            <fieldset>   
+              <input name="language" value="nepali" type="checkbox" class="check" />
+              <label for="Nepali"> Nepali</label>
+              <input type="checkbox" name="language" class="check" value="english"/>
+              <label for="english">English</label>
+              <input type="checkbox"name="language"class="check" value="other" />
+              <label for="other">Other</label>
+            </fieldset>
+
+            <p>Religion</p>
+            <fieldset> 
+              <input type="radio"  name="religion" class="check" value="hindu"/>
+              <label for="hindu">Hindu</label>
+              <input type="radio"  name="religion" class="check" value="budhist"/>
+              <label for="budhist">Budhist</label>
+              <input type="radio" name="religion" class="check" value="other"/>
+              <label for="other">Other</label>
+            </fieldset>
+
+           <br>
+                <p><textarea class="textArea imp" name="self Description" style="height:100px;width:100%"  placeholder="Tell us more about yourself"></textarea></p>
+        </div>
+        
+        <div class="tab">
+          <h3>Contact Details</h3>          
+          <p>Email</p>
+          <input type="email" name="email" class=" text" />                        
+          <p>Mobile Number</p>
+          <input type="number" name="contact number" class=" text"  />  
+          <p>Address</p>
+          <input type="text" name="Address" class="text" />
+
+          <p>Preferred Loaction for Job</p>
+          <fieldset> 
+            <input type="radio" id="Male" name="Job Location" value="lalitpur" class="check"/>
+            <label for="lalitapur">Lalitpur</label>
+            <input type="radio"  name="Job Location" class="check" value="kathmandu"/>
+            <label for="kathmandu">Kathmandu</label>
+            <input type="radio"  name="Job Location" class="check" value="bhaktapur"/>
+            <label for="bhaktapur">Bhaktapur</label>
+          </fieldset> <br>                 
+          <textarea class="textArea" name="Address Description" style="height:100px;width:100%;margin-top: 20px;"  placeholder="write some good things about your place"></textarea>  
+        </div>
+        
+        <div class="tab">
+          <h3>Qualification and Experience</h3> 
+          <div>         
+              <p>Mention the highest  level of Academic degree you hold.</p>
+              <input type="text" id="degree" class=" text" name="degree"/>
+
+              <p>Which of following Programming Language you Know?</p>
+              <fieldset>
+                <input id="javascript" name="Programming Language" value="javascript" type="checkbox" class="check" />
+                <label for="javaScript"> JavaScript</label>
+                <input id="python" name="Programming Language" value="python" type="checkbox" class="check" />
+                <label for="python"> Python</label>
+                <input id="php" name="Programming Language" value="php" type="checkbox" class="check" />
+                <label for="php"> PHP</label>
+                <input id="c++" name="Programming Language" value="c++" type="checkbox" class="check" />
+                <label for="C++"> C++</label>
+              </fieldset><br>
+              
+              <p>Which area of web development do you specialize in?</p> 
+              <fieldset> 
+                <input type="radio" name="specialization" value="front-end"class="check"/>
+                <label for="front-end">Front-end</label>
+                <input type="radio"  name="specialization" class="check" value="back-end"/>
+                <label for="back-end">Back-end</label>
+                <input type="radio" name="specialization" class="check" value="full-stack"/>
+                <label for="full-stack">Full-stack</label>
+              </fieldset>
+              
+              <textarea class="textArea" name="Working Experience" style="height:100px;width:100%;margin-top: 20px;"  placeholder="Write about your working experience or any project you have done"></textarea>                
+          </div>          
+        </div>
+        
+        <div class="tab">         
+          <h3>Other Information</h3>                     
+              <p>Do you have any Driving Liscence?</p>
+              <fieldset>   
+                <input id="two wheeler" name="Driving Liscence" value="two wheeler" type="checkbox" class="check" />
+                <label > Two wheeler</label>
+                <input id="four wheeler" name="Driving Liscence" value="four wheeler" type="checkbox" class="check" />
+                <label > Four wheeler</label>
+                <input id="others" name="Driving Liscence" value="others" type="checkbox" class="check" />
+                <label > others</label>
+                <input id="not any" name="Driving Liscence" value="not any" type="checkbox" class="check" />
+                <label > Not any</label>
+              </fieldset>
+    
+      
+              <p>Do you own any Vehicle?</p>
+              <fieldset>   
+                <input id="two wheeler" name="Vehicle" value="two wheeler" type="checkbox" class="check" />
+                <label for="two wheeler"> Two wheeler</label>
+                <input id="four wheeler" name="Vehicle" value="four wheeler" type="checkbox" class="check" />
+                <label for="four wheeler"> Four wheeler</label>
+                <input id="others" name="Vehicle" value="others" type="checkbox" class="check" />
+                <label for="others"> others</label>
+                <input id="not any" name="Vehicle" value="not any" type="checkbox" class="check" />
+                <label > Not any</label>
+              </fieldset>          
+              <textarea class="textArea" name="skills" style="height:100px;width:100%;margin-top:20px;"  placeholder="Write about your other skills"></textarea>
+          
+        </div>
+        <div id="objectData" class="tab">
+          <h3>Please Check the data before Submitting</h3>
+
+        </div>
+        
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button type="button" class="btn" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" class="btn" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            
+          </div>
+        </div>
+        
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step "></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+        
+        </form>
+        <script src="script.js">
+
+        </script>
+</body>
+</html>
