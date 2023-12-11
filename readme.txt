@@ -14,4 +14,7 @@ Simple client side form validation. Check length, email, radio button validation
 - check validation for Mobile number 
 - user can see summary of information before submitting 
 
+##Additional Function
+- also has theme changer function
+
 
